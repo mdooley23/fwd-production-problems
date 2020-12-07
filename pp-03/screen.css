@@ -8,7 +8,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
-
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:
+  }
+  .active{
+    order:-1;
+    flex: 1 0 100%;
+}
 /* ==== MODULAR STYLES === */
 #three,
 #two,
@@ -17,17 +25,29 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 #three {
   background-color: purple;
-}
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:
+  }
+  .active{
+    order:-1;
+    flex: 1 0 100%;
+  }
 #two {
   background-color: green;
+
 }
 #one {
   background-color: red;
-}
+  }
 
 
 /* ==== LAYOUT STYLES ==== */
 #content {
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: row-reverse;
 
 }
 
